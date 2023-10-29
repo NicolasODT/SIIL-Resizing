@@ -44,7 +44,7 @@ public class ImageResizer {
                 Core.copyMakeBorder(src, src, 0, 0, padding, padding, Core.BORDER_CONSTANT);
             }
 
-            // Redimensionnez l'image à 224x224 pixels
+            // Redimensionnez l'image à 512x512 pixels
             Mat dst = new Mat();
             Size dsize = new Size(512, 512);
             Imgproc.resize(src, dst, dsize);
